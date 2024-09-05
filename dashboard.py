@@ -1,3 +1,10 @@
+!pip install pandas
+!pip install matplotlib
+!pip install plotly.express
+!pip install scikit-learn
+!pip install numpy
+!pip install streamlit
+
 import pandas as pd
 import plotly.express as px
 import numpy as np
