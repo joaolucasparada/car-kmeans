@@ -1,17 +1,6 @@
-!pip install pandas
-!pip install matplotlib
-!pip install plotly.express
-!pip install scikit-learn
-!pip install numpy
-!pip install streamlit
-
 import pandas as pd
 import plotly.express as px
 import numpy as np
-from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import StandardScaler
-from sklearn.decomposition import PCA
-from sklearn.cluster import KMeans
 import streamlit as st
 
 st.title(':car: Correlação | PCA | K-Means')
