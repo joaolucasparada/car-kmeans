@@ -1,0 +1,9 @@
+Rótulos;Variável;Unidade de medida
+Year;Ano de fabricação;Número inteiro
+Engine HP;Cavalos de potência do motor;Número decimal
+Engine Cylinders;Quantidade de cilindros do motor;Número decimal
+Number of Doors;Quantidade de portas;Número inteiro
+highway MPG;Consumo de combustível na estrada;Número inteiro
+city mpg;Consumo de combustível na cidade;Número inteiro
+Popularity;Popularidade do carro;Número inteiro
+MSRP;Preço sugerido pelo fabricante;Número inteiro
