@@ -7,7 +7,7 @@ st.title(':car: Correlação | PCA | K-Means')
 
 data0 = pd.read_csv('data0.csv')
 data1= pd.read_csv('data1.csv')
-datadict = pd.read_csv('datadict.csv', sep=';', encoding='utf-8')
+datadict = pd.read_csv('datadict.csv', sep=';', encoding='latin1')
 projection = pd.read_csv('projection.csv')
 
 fig = px.imshow(data1.corr().round(2), color_continuous_scale='plasma', text_auto=True)
