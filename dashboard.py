@@ -32,6 +32,6 @@ col5, col6 = st.columns(2)
 
 col5.write('K-Means clusters:')
 fig1 = px.strip(projection, x='x',y='y',color='cluster_pca', color_discrete_sequence=['blue', 'yellow', 'orange', 'green', 'purple'],  hover_data=['x', 'y', 'Car', 'Year'])
-col6.plotly_chart(fig1)
+col5.plotly_chart(fig1)
 
 
