@@ -28,8 +28,10 @@ col3, col4 = st.columns([2,15])
 col3.metric(label='Variance Ratio', value='59%')
 col4.metric(label='Variance', value='4.75')
 
-st.write('K-Means clusters:')
+col5, col6 = st.columns(2)
+
+col5.write('K-Means clusters:')
 fig1 = px.strip(projection, x='x',y='y',color='cluster_pca', color_discrete_sequence=['blue', 'yellow', 'orange', 'green', 'purple'],  hover_data=['x', 'y', 'Car', 'Year'])
-st.plotly_chart(fig1)
+col6.plotly_chart(fig1)
 
 
