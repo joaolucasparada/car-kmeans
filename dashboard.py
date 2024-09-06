@@ -19,12 +19,12 @@ col1, col2 = st.columns(2)
 con1 = col1.container(border=True)
 con2 = col2.container(border=True)
 
-col1.write('Dicionário de Dados: ')
-col1.dataframe(datadict)
+con1.write('Dicionário de Dados: ')
+con1.dataframe(datadict)
 
-col2.write('Matriz de correlação: ')
+con2.write('Matriz de correlação: ')
 fig = px.imshow(data1.corr().round(2), color_continuous_scale='plasma', text_auto=True)
-col2.plotly_chart(fig)
+con2.plotly_chart(fig)
 
 col3, col4 = st.columns([2,15])
 col3.metric(label='Variance Ratio', value='59%')
