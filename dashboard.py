@@ -17,7 +17,7 @@ fig.show()
 
 col1, col2 = st.columns(2)
 con1 = col1.container(border=True)
-con2 = col2.conteiner(border=True)
+con2 = col2.container(border=True)
 
 col1.write('Dicionário de Dados: ')
 col1.dataframe(datadict)
