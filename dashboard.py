@@ -25,14 +25,11 @@ con2.write('Matriz de correlação: ')
 fig = px.imshow(data1.corr().round(2), color_continuous_scale='plasma', text_auto=True)
 con2.plotly_chart(fig)
 
-col3, col4 = st.columns([2,15])
-col3.metric(label='Variance Ratio', value='59%')
-col4.metric(label='Variance', value='4.75')
-
-col5, col6 = st.columns(2)
-
-col5.write('K-Means clusters:')
+col3, col4, col5 = st.columns(3)
+col3.write('K-Means clusters:')
 fig1 = px.strip(projection, x='x',y='y',color='cluster_pca', color_discrete_sequence=['blue', 'yellow', 'orange', 'green', 'purple'],  hover_data=['x', 'y', 'Car', 'Year'])
-col5.plotly_chart(fig1)
+col3.plotly_chart(fig1)
+col4.metric(label='Variance Ratio', value='59%')
+col5.metric(label='Variance', value='4.75')
 
 
