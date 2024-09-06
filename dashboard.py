@@ -21,7 +21,7 @@ col1.write('Dicionário de Dados: ')
 col1.dataframe(datadict)
 
 col2.write('Matriz de correlação: ')
-fig = px.imshow(data1.corr().round(2), color_continuous_scale='plasma', text_auto=True)
+fig = px.imshow(data1.corr().round(2), color_continuous_scale='plasma', text_auto=True, fig_size=500)
 col2.plotly_chart(fig)
 
 st.write('K-Means clusters:')
