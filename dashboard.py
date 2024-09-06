@@ -16,6 +16,8 @@ fig = px.imshow(data1.corr().round(2), color_continuous_scale='plasma', text_aut
 fig.show()
 
 col1, col2 = st.columns(2)
+con1 = col1.container(border=True)
+con2 = col2.conteiner(border=True)
 
 col1.write('Dicionário de Dados: ')
 col1.dataframe(datadict)
