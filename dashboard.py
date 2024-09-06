@@ -27,16 +27,13 @@ fig = px.imshow(data1.corr().round(2), color_continuous_scale='plasma', text_aut
 con2.plotly_chart(fig)
 
 col3, col4 = st.columns([2,15])
-con3 = col3.container(border=True)
-con4 = col4.container(border=True, margin=dict(l=10, r=10, b=10, t=40, pad=4))
-con3.metric(label='Variance Ratio', value='59%')
-con4.metric(label='Variance', value='4.75')
+col3.metric(label='Variance Ratio', value='59%')
+col4.metric(label='Variance', value='4.75')
 
 col5, col6 = st.columns(2)
-con5 = col5.container(border=True)
 
-con5.write('K-Means clusters:')
+col5.write('K-Means clusters:')
 fig1 = px.strip(projection, x='x',y='y',color='cluster_pca', color_discrete_sequence=['blue', 'yellow', 'orange', 'green', 'purple'],  hover_data=['x', 'y', 'Car', 'Year'])
-con5.plotly_chart(fig1)
+col5.plotly_chart(fig1)
 
 
