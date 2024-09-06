@@ -3,6 +3,8 @@ import plotly.express as px
 import numpy as np
 import streamlit as st
 
+st.set_page_config(layout='wide')
+
 st.title(':car: Correlação | PCA | K-Means')
 
 data0 = pd.read_csv('data0.csv')
