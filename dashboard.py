@@ -16,11 +16,10 @@ fig = px.imshow(data1.corr().round(2), color_continuous_scale='plasma', text_aut
 fig.show()
 
 col1, col2 = st.columns(2)
-con1 = col1.container(border=True)
 con2 = col2.container(border=True)
 
-con1.write('Dicionário de Dados: ')
-con1.dataframe(datadict)
+col1.write('Dicionário de Dados: ')
+col1.dataframe(datadict)
 
 con2.write('Matriz de correlação: ')
 fig = px.imshow(data1.corr().round(2), color_continuous_scale='plasma', text_auto=True)
