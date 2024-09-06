@@ -15,12 +15,14 @@ projection = pd.read_csv('projection.csv')
 fig = px.imshow(data1.corr().round(2), color_continuous_scale='plasma', text_auto=True)
 fig.show()
 
-st.write('Dicionário de Dados: ')
-st.dataframe(datadict)
+col1, col2 = st.columns(2)
 
-st.write('Matriz de correlação: ')
+col1.write('Dicionário de Dados: ')
+col1.dataframe(datadict)
+
+col2.write('Matriz de correlação: ')
 fig = px.imshow(data1.corr().round(2), color_continuous_scale='plasma', text_auto=True)
-st.plotly_chart(fig)
+col2.plotly_chart(fig)
 
 st.write('K-Means clusters:')
 fig1 = px.strip(projection, x='x',y='y',color='cluster_pca', color_discrete_sequence=['blue', 'yellow', 'orange', 'green', 'purple'],  hover_data=['x', 'y', 'Car', 'Year'])
