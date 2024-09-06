@@ -28,7 +28,7 @@ con2.plotly_chart(fig)
 
 col3, col4 = st.columns([2,15])
 con3 = col3.container(border=True)
-con3 = col3.container(border=True)
+con4 = col4.container(border=True)
 con3.metric(label='Variance Ratio', value='59%')
 con4.metric(label='Variance', value='4.75')
 
